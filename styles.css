@@ -1,0 +1,170 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333333;
+}
+
+/* Header */
+header {
+    background-color: #264653;
+    color: white;
+    padding: 1.5rem;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+/* Neon Text Effect */
+.neon {
+    font-size: 3rem;
+    color: #fff;
+    text-align: center;
+    text-shadow:
+        0 0 5px #2a9d8f,
+        0 0 10px #2a9d8f,
+        0 0 20px #2a9d8f,
+        0 0 30px #2a9d8f,
+        0 0 40px #2a9d8f,
+        0 0 50px #2a9d8f,
+        0 0 60px #2a9d8f;
+}
+
+@keyframes neonGlow {
+    0% {
+        text-shadow: 
+            0 0 5px #2a9d8f,
+            0 0 10px #2a9d8f,
+            0 0 20px #2a9d8f,
+            0 0 30px #2a9d8f,
+            0 0 40px #2a9d8f,
+            0 0 50px #2a9d8f,
+            0 0 60px #2a9d8f;
+    }
+    50% {
+        text-shadow: 
+            0 0 10px #e76f51,
+            0 0 20px #e76f51,
+            0 0 30px #e76f51,
+            0 0 40px #e76f51,
+            0 0 50px #e76f51,
+            0 0 60px #e76f51;
+    }
+    100% {
+        text-shadow: 
+            0 0 5px #2a9d8f,
+            0 0 10px #2a9d8f,
+            0 0 20px #2a9d8f,
+            0 0 30px #2a9d8f,
+            0 0 40px #2a9d8f,
+            0 0 50px #2a9d8f,
+            0 0 60px #2a9d8f;
+    }
+}
+
+.neon {
+    animation: neonGlow 2s infinite alternate;
+}
+
+/* Navigation */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+/* Sections */
+section {
+    padding: 4rem 2rem;
+    margin: 1rem 0;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+section.loaded {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+section#home {
+    background-color: #2a9d8f;
+    color: white;
+    text-align: center;
+}
+
+section#services ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+section#services ul li {
+    background-color: #e76f51;
+    padding: 1rem;
+    margin: 1rem 0;
+    border-radius: 8px;
+    color: white;
+}
+
+/* About Section */
+section#about {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 10px;
+}
+
+/* Contact Form */
+section#contact form input,
+section#contact form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Neon Button Effect */
+.neon-button {
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    color: white;
+    background-color: transparent;
+    border: 2px solid #2a9d8f;
+    border-radius: 10px;
+    text-transform: uppercase;
+    cursor: pointer;
+    text-align: center;
+    transition: 0.4s;
+    position: relative;
+    z-index: 1;
+    box-shadow: 0 0 5px #2a9d8f, 0 0 10px #2a9d8f;
+}
+
+.neon-button:hover {
+    background-color: #3d9d2a;
+    color: rgb(12, 6, 0);
+    box-shadow: 0 0 20px #2a9d8f, 0 0 30px #2a9d8f, 0 0 40px #2a9d8f, 0 0 50px #2a9d8f;
+}
+
+/* Footer */
+footer {
+    background-color: #264653;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}

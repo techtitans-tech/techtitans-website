@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tech Titans</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1 class="neon">Welcome to Tech Titans</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section id="home">
+        <h2>Digital Solutions for Your Business</h2>
+        <p>We offer services in Digital Marketing, PPT Projects, IoT Projects, Paper Publishing, and more.</p>
+    </section>
+
+    <section id="services">
+        <h2>Our Services</h2>
+        <ul>
+            <li>Digital Marketing</li>
+            <li>PPT Projects</li>
+            <li>IoT Projects</li>
+            <li>Paper Publishing</li>
+            <li>whatsapp assistance useing chatpro</li>
+        </ul>
+    </section>
+
+    <section id="about">
+        <h2>About Tech Titans</h2>
+        <p>We are a group of students providing innovative digital solutions for modern businesses.</p>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+         </form>
+        <form action="http://localhost:3000/send-email" method="POST">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" placeholder="Your Message" required></textarea>
+            <button type="submit">Send</button>
+        </form>
+        
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Tech Titans. All rights reserved.</p>
+    </footer>
+
+    <script>
+        window.addEventListener('load', () => {
+            document.querySelectorAll('section').forEach((section) => {
+                section.classList.add('loaded');
+            });
+        });
+    </script>
+</body>
+</html>
